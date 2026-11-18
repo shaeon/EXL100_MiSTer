@@ -1,0 +1,26 @@
+# Exelvision EXL 100 / Exeltel para MiSTer
+#
+# rtl/exl100: el core de MiST/SiDi/Poseidon/Calypso (submodulo shaeon/exl100,
+# sin cambios). De el se usa rtl/ salvo exl100_top.sv (el top de MiST: aqui lo
+# sustituye EXL100.sv) y exl_mem/exl_sdram (aqui todo va en block RAM, como en
+# la Poseidon). Su common/mist-modules no, porque el marco es sys/.
+
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl100.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/tms7000.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/tms3556.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_ir_tx.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_ps2.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl135.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/fdc1772.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/floppy.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_k7.v
+set_global_assignment -name VHDL_FILE          rtl/exl100/rtl/TMS5220.vhd
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_memoire_sd.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_raton.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_uart_tx.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_vsm.v
+set_global_assignment -name VERILOG_FILE       rtl/exl100/rtl/exl_modem.v
+
+set_global_assignment -name QIP_FILE           rtl/pll.qip
+set_global_assignment -name SDC_FILE           EXL100.sdc
+set_global_assignment -name SYSTEMVERILOG_FILE EXL100.sv

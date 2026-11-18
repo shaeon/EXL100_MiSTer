@@ -1,0 +1,3 @@
+[submodule "rtl/exl100"]
+	path = rtl/exl100
+	url = https://github.com/shaeon/exl100
