@@ -15,14 +15,14 @@ Autor: Shaeon (Carlos Palmero).
 ## Instalación
 
 - Copia el `.rbf` a `/media/fat/_Computer/`.
-- Copia `rtl/exl100/sd/EXL100.ROM` a `/media/fat/games/EXL100/boot.rom`. Es el
-  mismo fichero que usan las otras placas, solo cambia el nombre; lleva todas
-  las ROMs de las dos máquinas, del EXL135, de la Exelmémoire y de voz. Se
-  carga solo al arrancar el core.
-- Exelmémoire: copia `rtl/exl100/sd/EXL100.HD2` a
-  `/media/fat/games/EXL100/boot2.vhd`. MiSTer la monta sola en la unidad 2 al
-  arrancar y el core guarda en ella lo que se escriba en la Exelmémoire.
-  También se puede montar a mano (*Peripherals > Exelmemoire file*).
+- Copia los dos ficheros de la carpeta `SD/` a `/media/fat/games/EXL100/`:
+  - `boot.rom`: todas las ROMs de las dos máquinas, del EXL135, de la
+    Exelmémoire y de voz. Es el `EXL100.ROM` de las otras placas con otro
+    nombre. Se carga solo al arrancar el core.
+  - `boot2.vhd`: la Exelmémoire (16K, vacía). Es el `EXL100.HD2` de las otras
+    placas. MiSTer la monta sola en la unidad 2 al arrancar y el core guarda en
+    ella lo que se escriba en la Exelmémoire. Para vaciarla, vuelve a copiarla.
+    También se puede montar a mano (*Peripherals > Exelmemoire file*).
 - Cartuchos (`.rom`/`.bin`), cintas (`.k7`) y disquetes (`.fd`) pueden ir en
   la misma carpeta.
 

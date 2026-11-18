@@ -15,14 +15,14 @@ Author: Shaeon (Carlos Palmero).
 ## Installation
 
 - Copy the `.rbf` to `/media/fat/_Computer/`.
-- Copy `rtl/exl100/sd/EXL100.ROM` to `/media/fat/games/EXL100/boot.rom`. It is
-  the same file the other boards use, only renamed; it holds every ROM of both
-  machines, the EXL135, the Exelmémoire and the speech ROM. It loads by itself
-  when the core starts.
-- Exelmémoire: copy `rtl/exl100/sd/EXL100.HD2` to
-  `/media/fat/games/EXL100/boot2.vhd`. MiSTer mounts it in drive 2 at start-up
-  and the core saves the Exelmémoire contents to it. It can also be mounted by
-  hand (*Peripherals > Exelmemoire file*).
+- Copy both files in the `SD/` folder to `/media/fat/games/EXL100/`:
+  - `boot.rom`: every ROM of both machines, the EXL135, the Exelmémoire and
+    the speech ROM. It is the other boards' `EXL100.ROM`, renamed. It loads by
+    itself when the core starts.
+  - `boot2.vhd`: the Exelmémoire (16K, blank). It is the other boards'
+    `EXL100.HD2`. MiSTer mounts it in drive 2 at start-up and the core saves the
+    Exelmémoire contents to it. Copy it again to clear it. It can also be
+    mounted by hand (*Peripherals > Exelmemoire file*).
 - Cartridges (`.rom`/`.bin`), tapes (`.k7`) and disks (`.fd`) can go in the
   same folder.
 
